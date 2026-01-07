@@ -41,5 +41,5 @@ class Vehicle(ABC):
             self.__rental_price = 0
 
     @abstractmethod
-    def calculate_trip_cost(self):
+    def calculate_trip_cost(self,distance):
         pass

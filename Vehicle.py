@@ -4,9 +4,9 @@ class Vehicle(ABC):
         self.vehicle_id = vehicle_id
         self.model = model
 
-        self.__battery_percentage = battery_percentage
-        self.__maintenance_status = maintenance_status
-        self.__rental_price = rental_price
+        self.battery_percentage = battery_percentage
+        self.maintenance_status = maintenance_status
+        self.rental_price = rental_price
 
     @property
     def battery_percentage(self):

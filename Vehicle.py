@@ -1,4 +1,5 @@
-class Vehicle:
+from abc import ABC, abstractmethod
+class Vehicle(ABC):
     def __init__(self, vehicle_id, model, battery_percentage, maintenance_status, rental_price):
         self.vehicle_id = vehicle_id
         self.model = model
@@ -38,3 +39,7 @@ class Vehicle:
         else:
             print("Rental price must be positive")
             self.__rental_price = 0
+
+    @abstractmethod
+    def calculate_trip_cost(self):
+        pass
